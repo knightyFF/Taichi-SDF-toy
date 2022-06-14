@@ -6,7 +6,7 @@
 
 > Figure: result of `python3 pKlein.py`. :-)
 
-Just messing with Taichi voxel challenge. 
+Just messing with Taichi voxel challenge. https://github.com/taichi-dev/voxel-challenge
 
 **Taichi lang documentation:** https://docs.taichi.graphics/
 
