@@ -4,10 +4,10 @@ import taichi as ti
 from taichi.math import *
 import math
 
-scene = Scene(exposure=1.)
+scene = Scene(exposure=1.2)
 scene.set_floor(-10.1, (0.9, 0.9, 0.9))
-#scene.set_ambient_light((0.1,0.15,0.15)) #buggy bug
-scene.set_directional_light((1, 1, 2), 0.02, (2.16, 2.14, 1.8))
+#scene.set_ambient_light((0.1,0.15,0.15)) #big buggy bug
+scene.set_directional_light((1, 1, 1), 0.02, (2.1, 2., 1.5))
 scene.set_background_color((0.1, 0.1, 0.15)) #((0.3, 0.4, 0.6))
 
 @ti.func
@@ -64,10 +64,10 @@ scene.renderer.ray_march_sdf_steps = 200
 scene.set_sdf_func(pKlein)
 scene.set_sdf_col(My_SDF_col)
 
-#Kn: helps preserving your GC
+#helps preserving your GC
 scene.maxSamples = 100
 
-#Kn: trying GUI
+#trying GUI
 #Makes things a lot slower so not used :-/
 def myGUI(win):
     Modified = False

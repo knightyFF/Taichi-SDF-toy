@@ -15,7 +15,7 @@ def default_SDF_color(o, n):
 MAX_RAY_DEPTH = 2
 use_directional_light = True
 
-DIS_LIMIT = 10
+DIS_LIMIT = 20
 
 
 @ti.data_oriented
